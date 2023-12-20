@@ -125,6 +125,11 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
+# doc_events = {
+# 	"Purchase Invoices": {
+# 		"on_submit": "inventory_management.inventory_management.create_document",
+# 	}
+# }
 
 # Scheduled Tasks
 # ---------------

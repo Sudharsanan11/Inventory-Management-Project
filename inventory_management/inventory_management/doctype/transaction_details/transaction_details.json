@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{party_id}-{product_name}-{#####}",
+ "creation": "2023-12-06 18:40:07.809269",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "party_id",
+  "company_name",
+  "product_name",
+  "column_break_7ktvd",
+  "quantity",
+  "rate",
+  "amount",
+  "date",
+  "column_break_iho6m",
+  "ref_doctype",
+  "invoice_id",
+  "in_quantity",
+  "out_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Link",
+   "label": "Product Name",
+   "options": "Product List"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Rate"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "in_quantity",
+   "fieldtype": "Float",
+   "label": "In Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "out_quantity",
+   "fieldtype": "Float",
+   "label": "Out Quantity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7ktvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "Party Type",
+   "options": "Supplier\nCustomer"
+  },
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Dynamic Link",
+   "label": "Party ID",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "ref_doctype",
+   "fieldtype": "Select",
+   "label": "Reference DocType ",
+   "options": "Purchase Invoices\nSales Invoices"
+  },
+  {
+   "fieldname": "invoice_id",
+   "fieldtype": "Dynamic Link",
+   "label": "Invoice ID",
+   "options": "ref_doctype"
+  },
+  {
+   "fieldname": "column_break_iho6m",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-14 10:55:08.702513",
+ "modified_by": "Administrator",
+ "module": "Inventory Management",
+ "name": "Transaction Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
